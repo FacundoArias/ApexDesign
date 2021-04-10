@@ -1,0 +1,329 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Open Sans Condensed";
+}
+
+#seccion1 {
+  width: 100vw;
+  background: url("https://i.pinimg.com/originals/df/bb/80/dfbb80e3d5fad4fcdc904ff5a8a7f412.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background:rgb(189, 147, 104);
+  position: relative;
+}
+
+.sombra {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(189, 146, 104, 0.431);
+}
+
+#header {
+  width: 100%;
+  background: #000;
+}
+
+
+
+.contenedor-nav {
+  letter-spacing: 2px;
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      padding: 10px 20px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 200;
+      }
+    }
+  }
+
+  li:hover > a {
+    border-bottom: 3px solid #fff;
+    border-color: #fff;
+  }
+}
+
+.contenedor-logo {
+  h1 {
+    font-size: 30px;
+  }
+  h1:hover {
+    cursor: pointer;
+  }
+}
+
+.bienvenido {
+  h1 {
+    font-weight: bold;
+    font-size: 100px;
+    color: #fff;
+    transform: translateY(-75px);
+  }
+  p {
+    transform: translateY(-50px);
+    font-size: 20px;
+    color: #fff;
+  }
+  button {
+    transform: translateY(-25px);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .bienvenido {
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      transform: translateY(0px);
+    }
+
+    p {
+      transform: translateY(0px);
+    }
+
+    button {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedor-nav {
+    ul {
+      li {
+        padding: 0px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  #seccion2 {
+    width: 200vw;
+    height: 200vh;
+  }
+}
+
+#seccion2 {
+  margin-top: 30px;
+  width: 100vw;
+  height: max-content;
+  .contenedor-imagen1 {
+    width: 100%;
+    height: 350px;
+    background: url("https://p1.pxfuel.com/preview/989/784/969/interior-interior-design-furniture-room.jpg");
+    background-size: cover;
+  }
+  .contenedor-imagen2 {
+    width: 100%;
+    height: 350px;
+    background: url("https://www.wallpapertip.com/wmimgs/14-144235_interior-design-desktop-wallpapers-desktop-wallpaper-interior-design.jpg");
+    background-size: cover;
+  }
+  .titulo {
+    max-width: max-content;
+    h1 {
+      font-weight: bold;
+    }
+  }
+}
+.sombras {
+  box-shadow: 0 4px 14px 0 #000;
+}
+.contrastar {
+  background: #000;
+}
+
+.subrayado-white {
+  width: 30%;
+  min-height: 3px;
+  background: #ffffff;
+  margin: -10px auto;
+}
+
+.subrayado-black {
+  width: 30%;
+  min-height: 3px;
+  background: #000;
+  margin: -10px auto;
+}
+
+
+.cortar-abajo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+//background: url("https://images3.alphacoders.com/106/1068589.jpg");
+
+#seccion3{
+    width: 100vw;
+    height: max-content;
+    h2{
+        font-weight: bold;
+    }
+}
+
+@mixin img-galeria($img) {
+  width:100%;
+  height: 33vh;
+
+  background: url($img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+@mixin contenido-galeria() {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  transform: scale(0);
+  transition: .3s;
+  button{
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    transition: .5s;
+  }
+  button:hover{
+    background:rgb(173, 121, 72);
+    color: #fff;
+  }
+
+}
+//-------------------
+.img1{
+   @include img-galeria('https://images3.alphacoders.com/106/1068589.jpg')
+}
+.contenido1{
+ @include contenido-galeria
+  
+}
+.img1:hover>.contenido1{
+  
+  transform: scale(1);
+}
+//-------------------
+.img2{
+    @include img-galeria('https://image.freepik.com/foto-gratis/sala-estar-decoracion-madera-maqueta-marco-vertical-exhibicion-arte_106895-6.jpg')
+}
+
+.contenido2{
+  @include contenido-galeria
+}
+
+.img2:hover>.contenido2{
+  transform:scale(1);
+}
+//-------------------
+.img3{
+   @include img-galeria('https://media-cdn.tripadvisor.com/media/photo-s/11/af/a8/08/original-decoracion-de.jpg');
+}
+.contenido3{
+  @include contenido-galeria;
+}
+
+.img3:hover>.contenido3{
+  transform:scale(1);
+}
+//-------------------
+.img4{
+    @include img-galeria('https://www.lavabosduchas.es/blog/wp-content/uploads/2020/02/bano-estilo-mediterraneo-1024x576.jpg');
+}
+.contenido4{
+  @include contenido-galeria;
+}
+
+.img4:hover>.contenido4{
+  transform:scale(1);
+}
+//-------------------
+.img5{
+    @include img-galeria('http://decointeriores.net/wp-content/uploads/2012/10/decorar-el-sotano-de-la-casa.jpg');
+}
+.contenido5{
+  @include contenido-galeria;
+}
+.img5:hover>.contenido5{
+  transform:scale(1);
+}
+//-------------------
+.img6{
+    @include img-galeria('https://www.hipermueblesanibal.com/wp-content/uploads/2019/06/oficina-moderna.jpg');
+}
+.contenido6{
+    @include contenido-galeria;
+}
+.img6:hover>.contenido6{
+  transform:scale(1);
+}
+//-------------------
+.img7{
+  @include img-galeria('https://homesolution.net/blog/wp-content/uploads/2020/10/decoraci%C3%B3n-de-cocinas-chicas-2-1024x683.jpg');
+}
+.contenido7{
+  @include contenido-galeria;
+}
+.img7:hover>.contenido7{
+transform:scale(1);
+}
+//-------------------
+.img8{
+  @include img-galeria('https://www.toolman.es/wp-content/uploads/2019/06/jardin-decoracion.jpg');
+}
+.contenido8{
+  @include contenido-galeria;
+}
+.img8:hover>.contenido8{
+transform:scale(1);
+}
+//-------------------
+.img9{
+  @include img-galeria('https://www.hola.com/imagenes/decoracion/20190409140115/errores-decoracion-distribucion-salon/0-665-886/errores-distribucion-y-decoracion-salon-y-solucion-14t-t.jpg');
+}
+.contenido9{
+  @include contenido-galeria;
+}
+.img9:hover>.contenido9{
+transform:scale(1);
+}
+
+
+//EQUIPO
+
+#seccion4{
+  height:max-content;
+  background:#000;
+}
+
+.logo-footer{
+  
+  h4{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  h5{
+    font-size: 25px;
+  }
+}

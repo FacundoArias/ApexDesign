@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overscroll-behavior-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Open Sans Condensed";
+}
+
+#seccion1 {
+  width: 100vw;
+  background: url("https://i.pinimg.com/originals/df/bb/80/dfbb80e3d5fad4fcdc904ff5a8a7f412.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sombra {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(189, 146, 104, 0.431);
+}
+
+#header {
+  width: 100%;
+  background: #000;
+}
+
+.contenedor-nav {
+  letter-spacing: 2px;
+}
+
+.contenedor-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-nav ul li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.contenedor-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 200;
+}
+
+.contenedor-nav li:hover > a {
+  border-bottom: 3px solid #fff;
+  border-color: #fff;
+}
+
+.contenedor-logo h1 {
+  font-size: 30px;
+}
+
+.contenedor-logo h1:hover {
+  cursor: pointer;
+}
+
+.bienvenido h1 {
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+}
+
+.bienvenido p {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  font-size: 20px;
+  color: #fff;
+}
+
+.bienvenido button {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bienvenido button:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bienvenido h1 {
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .bienvenido p {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .bienvenido button {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedor-nav ul li {
+    padding: 0px;
+    margin-bottom: 2px;
+  }
+  #seccion2 {
+    width: 200vw;
+    height: 200vh;
+  }
+}
+
+#seccion2 {
+  margin-top: 30px;
+  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#seccion2 .contenedor-imagen1 {
+  width: 100%;
+  height: 350px;
+  background: url("https://p1.pxfuel.com/preview/989/784/969/interior-interior-design-furniture-room.jpg");
+  background-size: cover;
+}
+
+#seccion2 .contenedor-imagen2 {
+  width: 100%;
+  height: 350px;
+  background: url("https://www.wallpapertip.com/wmimgs/14-144235_interior-design-desktop-wallpapers-desktop-wallpaper-interior-design.jpg");
+  background-size: cover;
+}
+
+#seccion2 .titulo {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+#seccion2 .titulo h1 {
+  font-weight: bold;
+}
+
+.sombras {
+  -webkit-box-shadow: 0 4px 14px 0 #000;
+          box-shadow: 0 4px 14px 0 #000;
+}
+
+.contrastar {
+  background: #000;
+}
+
+.subrayado-white {
+  width: 30%;
+  min-height: 3px;
+  background: #ffffff;
+  margin: -10px auto;
+}
+
+.subrayado-black {
+  width: 30%;
+  min-height: 3px;
+  background: #000;
+  margin: -10px auto;
+}
+
+.cortar-abajo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+#seccion3 {
+  width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#seccion3 h2 {
+  font-weight: bold;
+}
+
+.img1 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://images3.alphacoders.com/106/1068589.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido1 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido1 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido1 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img1:hover > .contenido1 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img2 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://image.freepik.com/foto-gratis/sala-estar-decoracion-madera-maqueta-marco-vertical-exhibicion-arte_106895-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido2 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido2 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido2 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img2:hover > .contenido2 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img3 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://media-cdn.tripadvisor.com/media/photo-s/11/af/a8/08/original-decoracion-de.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido3 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido3 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido3 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img3:hover > .contenido3 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img4 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://www.lavabosduchas.es/blog/wp-content/uploads/2020/02/bano-estilo-mediterraneo-1024x576.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido4 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido4 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido4 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img4:hover > .contenido4 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img5 {
+  width: 100%;
+  height: 33vh;
+  background: url("http://decointeriores.net/wp-content/uploads/2012/10/decorar-el-sotano-de-la-casa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido5 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido5 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido5 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img5:hover > .contenido5 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img6 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://www.hipermueblesanibal.com/wp-content/uploads/2019/06/oficina-moderna.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido6 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido6 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido6 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img6:hover > .contenido6 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img7 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://homesolution.net/blog/wp-content/uploads/2020/10/decoraci%C3%B3n-de-cocinas-chicas-2-1024x683.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido7 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido7 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido7 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img7:hover > .contenido7 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img8 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://www.toolman.es/wp-content/uploads/2019/06/jardin-decoracion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido8 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido8 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido8 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img8:hover > .contenido8 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.img9 {
+  width: 100%;
+  height: 33vh;
+  background: url("https://www.hola.com/imagenes/decoracion/20190409140115/errores-decoracion-distribucion-salon/0-665-886/errores-distribucion-y-decoracion-salon-y-solucion-14t-t.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contenido9 {
+  padding: 10px;
+  min-height: 33vh;
+  background: rgba(0, 0, 0, 0.349);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contenido9 button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenido9 button:hover {
+  background: #ad7948;
+  color: #fff;
+}
+
+.img9:hover > .contenido9 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#seccion4 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: #000;
+}
+
+.logo-footer h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logo-footer h5 {
+  font-size: 25px;
+}
+/*# sourceMappingURL=styles.css.map */
